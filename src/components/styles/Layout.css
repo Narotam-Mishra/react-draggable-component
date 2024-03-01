@@ -1,0 +1,14 @@
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.layout>div {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+}
