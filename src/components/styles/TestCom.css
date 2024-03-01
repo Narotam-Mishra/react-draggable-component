@@ -1,0 +1,14 @@
+.resizable-layout {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .resizable-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    overflow: hidden; /* Ensure content does not overflow */
+  }
+  
