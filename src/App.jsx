@@ -1,17 +1,14 @@
 
-// import Draggable from "./components/Draggable"
-import 'bootstrap/dist/css/bootstrap.min.css';
-// import ResizableLayout from './components/TestComp';
-// import ResizableComponentLayout from './components/Layout';
-import DraggableResizableComponent from './components/DraggableResizableComponent'
+import './App.css';
+import '../src/components/styles/ResizableCom.css';
+import '../src/components/styles/SplitterComponent.css';
 
+import ResizableCom from './components/ResizableCom';
+// import TopBar from './components/TopBar';
 
 function App() {
-
-  return (
-    <div>
-      <DraggableResizableComponent/>
-    </div>
+  return(
+    <><ResizableCom /></>
   )
 }
 
