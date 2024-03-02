@@ -15,7 +15,7 @@ const ResizableCom = () => {
 
   const handleAddButtonClick = async () => {
     try {
-      const response = await axios.get('http://localhost:7373/api/v1/add');
+      const response = await axios.get('https://res-com-backend-mern-naru.onrender.com/api/v1/add');
       console.log(response);
       setImage(response.data.url);
       setDescription(response.data.description);
@@ -29,7 +29,7 @@ const ResizableCom = () => {
 
   const handleUpdateButtonClick = async () => {
     try {
-      const response = await axios.patch('http://localhost:7373/api/v1/updateData');
+      const response = await axios.patch('https://res-com-backend-mern-naru.onrender.com/api/v1/updateData');
       console.log(response);
       setTitle(response.data.randomString);
 
@@ -43,7 +43,7 @@ const ResizableCom = () => {
   // Function to fetch API counter data
   const fetchApiCounter = async () => {
     try {
-      const response = await fetch('http://localhost:7373/api/v1/getCount');
+      const response = await fetch('https://res-com-backend-mern-naru.onrender.com/api/v1/getCount');
       const data = await response.json();
       setApiCounter(data.count);
     } catch (error) {
